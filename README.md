@@ -15,8 +15,8 @@ Listen to network connectivity events with a React hook.
 
 ```javascript
 function App() {
-  const isOnline = useOffline();
-  return <p>You are {isOnline ? 'online' : 'offline'}.</p>;
+  const isOffline = useOffline();
+  return <p>You are {isOffline ? 'offline' : 'online'}.</p>;
 }
 ```
 

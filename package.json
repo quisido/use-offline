@@ -1,6 +1,6 @@
 {
   "name": "use-offline",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Charles Stover <use-offline@charlesstover.com>",
   "description": "React hook for listening to network connectivity events",
   "homepage": "https://www.npmjs.com/package/use-offline",

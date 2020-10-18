@@ -2,14 +2,14 @@ import { useEffect, useState } from 'react';
 
 export default function useOffline(): boolean {
   // TODO: Default value.
-  const [isOnline, setIsOnline] = useState(true);
+  const [isOffline, setIsOffline] = useState(true);
 
   useEffect((): (() => void) => {
     const handleOffline = (): void => {
-      setIsOnline(false);
+      setIsOffline(true);
     };
     const handleOnline = (): void => {
-      setIsOnline(true);
+      setIsOffline(false);
     };
     window.addEventListener('offline', handleOffline);
     window.addEventListener('online', handleOnline);
@@ -19,5 +19,5 @@ export default function useOffline(): boolean {
     };
   }, []);
 
-  return isOnline;
+  return isOffline;
 }

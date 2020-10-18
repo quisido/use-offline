@@ -38,7 +38,7 @@ describe('useOffline', (): void => {
     act((): void => {
       window.dispatchEvent(new Event('offline'));
     });
-    expect(result.current).toBe(false);
+    expect(result.current).toBe(true);
   });
 
   it('should respond to online events', (): void => {
@@ -49,7 +49,7 @@ describe('useOffline', (): void => {
     act((): void => {
       window.dispatchEvent(new Event('online'));
     });
-    expect(result.current).toBe(true);
+    expect(result.current).toBe(false);
   });
 
   it('should stop listening to online and offline events on unmount', (): void => {
