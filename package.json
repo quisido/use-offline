@@ -1,18 +1,18 @@
 {
-  "name": "use-online",
+  "name": "use-offline",
   "version": "1.0.0",
-  "author": "Charles Stover <use-online@charlesstover.com>",
-  "description": "React hook for listening to online/offline events",
-  "homepage": "https://www.npmjs.com/package/use-online",
+  "author": "Charles Stover <use-offline@charlesstover.com>",
+  "description": "React hook for listening to network connectivity events",
+  "homepage": "https://www.npmjs.com/package/use-offline",
   "license": "MIT",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.mjs",
-  "repository": "https://github.com/CharlesStover/use-online",
+  "repository": "https://github.com/CharlesStover/use-offline",
   "type": "module",
   "types": "./types/index.d.ts",
   "bugs": {
-    "email": "use-online@charlesstover.com",
-    "url": "https://github.com/CharlesStover/use-online/issues"
+    "email": "use-offline@charlesstover.com",
+    "url": "https://github.com/CharlesStover/use-offline/issues"
   },
   "directories": {
     "lib": "src"

@@ -1,9 +1,9 @@
 import { act, renderHook } from '@testing-library/react-hooks';
-import useOnline from '.';
+import useOffline from '.';
 
-describe('useOnline', (): void => {
+describe('useOffline', (): void => {
   it('should default to true', (): void => {
-    const { result } = renderHook(useOnline);
+    const { result } = renderHook(useOffline);
     expect(result.current).toBe(true);
   });
 
@@ -21,7 +21,7 @@ describe('useOnline', (): void => {
       expect.any(Function),
     );
 
-    renderHook(useOnline);
+    renderHook(useOffline);
 
     expect(windowAddEventListener).toHaveBeenCalledWith(
       'online',
@@ -34,7 +34,7 @@ describe('useOnline', (): void => {
   });
 
   it('should respond to offline events', (): void => {
-    const { result } = renderHook(useOnline);
+    const { result } = renderHook(useOffline);
     act((): void => {
       window.dispatchEvent(new Event('offline'));
     });
@@ -42,7 +42,7 @@ describe('useOnline', (): void => {
   });
 
   it('should respond to online events', (): void => {
-    const { result } = renderHook(useOnline);
+    const { result } = renderHook(useOffline);
     act((): void => {
       window.dispatchEvent(new Event('offline'));
     });
@@ -66,7 +66,7 @@ describe('useOnline', (): void => {
       expect.any(Function),
     );
 
-    const { unmount } = renderHook(useOnline);
+    const { unmount } = renderHook(useOffline);
     unmount();
 
     expect(windowRemoveEventListener).toHaveBeenCalledWith(
