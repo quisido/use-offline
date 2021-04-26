@@ -1,12 +1,12 @@
 {
   "name": "use-offline",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Charles Stover <use-offline@charlesstover.com>",
   "description": "React hook for listening to network connectivity events",
   "homepage": "https://www.npmjs.com/package/use-offline",
   "license": "MIT",
   "main": "./dist/cjs/index.js",
-  "module": "./dist/esm/index.mjs",
+  "module": "./dist/esm/index.js",
   "repository": "https://github.com/CharlesStover/use-offline",
   "type": "module",
   "types": "./types/index.d.ts",
@@ -24,7 +24,7 @@
   "publishConfig": {
     "access": "public",
     "main": "./dist/cjs/index.js",
-    "module": "./dist/esm/index.mjs"
+    "module": "./dist/esm/index.js"
   },
   "scripts": {
     "build": "rollup --config",
